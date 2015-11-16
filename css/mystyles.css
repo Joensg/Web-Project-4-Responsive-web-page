@@ -1,0 +1,140 @@
+h1{
+	/*the following apply to everything within the h1 tag of the html*/
+	/*Text aligned to center of web page*/
+	text-align: center;
+	font-size:40px
+}
+
+h2{
+  color:White;
+  font-size:30px
+  text-indent:50px;
+  margin-left: 20px;
+}
+
+.navto{
+	/*the following apply to all elements in the html with class navto*/
+	/*Text aligned to right of web page*/
+	text-align: right;
+	margin-right: 100px;
+	color: #fff;
+	font-size:20px
+}
+
+.searcheng{
+	text-align: right;
+	margin-right: 40px;
+	color: #fff;
+	font-size:20px
+}
+
+body{
+	/*the following apply to everything within the body tag of the html*/
+	/*Change font family to Arial or if unavailable, to sans-serif*/
+	font-family: "Arial", sans-serif;
+	/*Change text color to black*/
+	color: #000;
+	/*Change background color*/
+	background: #00a4e4;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-image: url("img/75_phoenixAnimated.gif");
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.shadow{
+	/*Add text shadow with a blur effect*/
+	/*Note: Internet Explorer 9 and earlier do not support the text-shadow property.*/
+	text-shadow: 4px 8px 8px #040;	
+}
+
+p{
+	color:#000;
+	font-size:20px
+}
+
+li{
+	margin-left: 30px;
+	color:#000;
+	font-size:20px
+}
+
+.img1 {
+  width:25%;
+  opacity: 0.7;
+  /*Note:The following does not work in Internet Explorer 9 and earlier versions.*/
+  transition: width 2s, height 2s, transform 2s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+}
+.img1:hover{
+  border: 1px solid #0000ff;
+  opacity: 1.0;
+  width: 40%;
+  /*Note:The following does not work in Internet Explorer 9 and earlier versions.*/
+  -webkit-transform: rotate(360deg); /* Safari */
+  transform: rotate(360deg); 
+}
+
+.imgindent{
+  margin-left: 50px;
+}
+
+.imgindent1{
+  margin-left: 150px;
+}
+
+h1:hover{
+	/*the following apply to everything within the h1 tag of the html when user hovers with mouse over it*/
+	/*Change text color to white when user hovers over it*/
+	color: #fff;
+	/*Transforms all characters to uppercase when user hovers over it*/
+	text-transform: uppercase;
+	/*Add text shadow effect when user hovers over it*/
+	/*Note: Internet Explorer 9 and earlier do not support the text-shadow property.*/
+	text-shadow: 2px 2px #004;
+}
+
+table {
+    border-collapse: collapse;
+}
+table, tr, td, th {
+  border: 1px solid black;
+}
+table ul li{
+  color: Black;
+  text-align:left;
+}
+table th {
+  color: green;
+  background:Cyan;
+  text-align:center;
+}
+#mytable{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+/* unvisited link */
+a:link {
+  color: #507;
+}
+/* visited link */
+a:visited {
+  color: #f00;
+}
+/* mouse over link */
+a:hover {
+    color: #f0f;
+}
+
+.txtbox{
+	text-align:center;
+	background: #fff;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+}

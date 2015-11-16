@@ -1,0 +1,118 @@
+<html lang="en">
+<!-- Coursera Course: Responsive Website Basics: Code with HTML, CSS, and JavaScript -->
+<!-- Going deeper into JavaScript - Assignment: Build a Responsive Web Page -->
+    <head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Joel Sequeira">
+		<!-- import bootstrap -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<!-- import mystyles stylesheet -->
+		<link rel="stylesheet" href="css/mystyles.css" type="text/css"/>
+		<!-- import jQuery -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<title>Myself</title>
+    </head>	
+    <body onload="the_timer=setInterval(do_timer, 50)">
+			<header>
+			<h1 class="shadow">Joel Sequeira</h1>
+			</header>
+			<p class="navto">Current Time:
+			<span class="shadow" id="txt"></span></p> 
+			<div class="navto">
+			Navigate to :
+			</div>
+			<nav class="searcheng shadow">
+			<a href="http://www.google.com/">Google</a>
+			<a href="http://www.yahoo.com/">Yahoo</a>
+			<a href="http://www.bing.com/">Bing</a>
+			</nav>
+			<img src="img/75_phoenixAnimated.gif" id="phoenix"
+             style="position:absolute; right:0">
+			<button id="stopph" onclick="pausephoenix()">
+				Stop Phoenix
+			</button>
+			<section>
+				<p>Click on the button 'Stop Phoenix' to stop it. Enter some text in the box below and click submit to add it to the webpage!</p>
+				<input type="text" id="userInput" onkeypress="handle(event)"></input>
+				<button onclick="addtxt()">Submit</button>
+				<!-- add this line for function to write into -->
+				<p id="parabox" class ="txtbox"></p>
+			</section>
+			<section>
+				<h2 class="shadow">Favorite Fruits</h2>
+				<ol>
+					<li> Apples
+						<div>
+						<a href="https://en.wikipedia.org/wiki/Apple">
+						<img class="imgindent img1" src="img/Apples_zps5gwifpll.jpg" alt="Apple Image"/></a>
+						</div>
+					</li>
+					<li> Mangoes
+						<div>
+						<a href="https://en.wikipedia.org/wiki/Mango">
+						<img class="imgindent1 img1" src="img/Mangos_in_market_zpsbcaaa68g.jpg" alt="Mango Image"/></a>
+						</div>
+					</li>
+					<li> Grapes 
+						<div>
+							<a href="https://en.wikipedia.org/wiki/Grape">
+							<img class="imgindent img1" src="img/grapes320.jpg" alt="Grape Image"/></a>
+						</div>
+					</li>
+					<li> Bannanas 
+						<div>
+						<a href="https://en.wikipedia.org/wiki/Banana">
+						<img class="imgindent1 img1" src="img/091.jpg" alt="Banana Image"/></a>
+						</div>
+					</li>
+					<li> Pears 
+						<div>
+						<a href="https://en.wikipedia.org/wiki/Pear">
+						<img class="imgindent img1" src="img/162431.jpg" alt="Pear Image"/></a>
+						</div>
+					</li>
+				</ol>
+				<p>You can read further about the fruits above by either clicking on the respective image 
+				of the fruit or by clicking on the following respective wikipedia links:</p>
+				<details>
+				<summary> Fruits Links!</summary>
+				<a href="https://en.wikipedia.org/wiki/Apple"><em>Apple</em></a>
+				<a href="https://en.wikipedia.org/wiki/Mango"><em>Mango</em></a>
+				<a href="https://en.wikipedia.org/wiki/Grape"><em>Grape</em></a>
+				<a href="https://en.wikipedia.org/wiki/Banana"><em>Banana</em></a>
+				<a href="https://en.wikipedia.org/wiki/Pear"><em>Pear</em></a>
+				</details>
+			</section>
+			<section>
+				<h2 class="shadow">Some other things I like:</h2>
+				<table id="mytable">
+					<tr>
+						<th>Musical Instruments</th>
+						<td>
+							<ul> 
+								<li> Guitar </li>
+								<li> Violin</li>
+								<li> Piano </li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th>Games</th>
+						<td>
+							<ul> 
+								<li> Football </li>
+								<li> Chess</li>
+								<li> Basketball </li>
+							</ul>
+						</td>
+					</tr>   
+				</table>
+			</section>
+			<footer>
+				This page was created by Joel Sequeira. To learn more about web development, visit the <a href="http://www.w3schools.com/" target="_blank">Web Developer Site!</a>
+			</footer>
+			<!-- import myscript javascript file -->
+			<script src="js/myscript.js" type="text/javascript"></script>
+			<script>  startTime(); </script>
+    </body>
+</html>
