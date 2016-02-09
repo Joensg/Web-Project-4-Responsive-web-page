@@ -25,9 +25,9 @@ function do_timer(){
 //pause phoenix
 function pausephoenix(){
 	event.stopPropagation();
-	var strbtn = "Start Phoenix"
+	var strbtn = "Start Phoenix";
 	if(paused){
-		var strbtn = "Stop Phoenix"	
+		strbtn = "Stop Phoenix";	
 	}
 	document.getElementById("stopph").innerHTML = strbtn;
     paused = !paused;	
@@ -45,6 +45,6 @@ function startTime() {
     var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    if (i < 10) {i = "0" + i;}  // add zero in front of numbers < 10
     return i;
 }
